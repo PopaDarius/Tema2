@@ -5,7 +5,7 @@ T=28;
 f=1/T;
 w=2*pi*f;
 pas=T/10000;
-t = 0:pas:7*T;
+t = 0:pas:4*T;
 N=50;
 s=abs(sawtooth(w*t,0.5));
 for n = -N:N
@@ -30,3 +30,4 @@ xlabel('Pulsatia w');
 ylabel('Amplitudinile Ak');
 title('Spectrul de a	mplitudini.');
 hold off
+%In concluzie analiza Fourier a semnalelor analogice permite impartirea unui semnal intr-o suma de semnale elementare.
